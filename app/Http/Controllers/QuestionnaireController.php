@@ -27,6 +27,12 @@ class QuestionnaireController extends Controller
 
         return redirect('/questionnaires/' . $questionnaire->id);
     }
+    
+    // Using Route binding
+    public function show(Questionnaire $questionnaire)
+    {
+        return view('questionnaire.show', compact('questionnaire'));
+    }
 
 
 }
