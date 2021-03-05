@@ -8,6 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Questionnaire extends Model
 {
     use HasFactory;
-    // Turn of mass fillable protection
+    // Turn on mass assignment
     protected $guarded = [];
 }
