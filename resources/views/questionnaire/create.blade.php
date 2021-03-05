@@ -15,7 +15,7 @@
                         <!-- Title input -->
                         <div class="form-group">
                             <label for="title">Title</label>
-                            <input type="text" class="form-control" id="title" aria-describedby="titleHelp" placeholder="Enter title">
+                            <input name="title" type="text" class="form-control" id="title" aria-describedby="titleHelp" placeholder="Enter title">
                             <small id="titleHelp" class="form-text text-muted">Enter title for your questionnaire</small>
 
                             @error('title')
@@ -26,7 +26,7 @@
                         <!-- Purpose input -->
                         <div class="form-group">
                             <label for="purpose">Purpose</label>
-                            <input type="text" class="form-control" id="purpose" aria-describedby="purposeHelp" placeholder="Enter purpose">
+                            <input name="purpose" type="text" class="form-control" id="purpose" aria-describedby="purposeHelp" placeholder="Enter purpose">
                             <small id="purposeHelp" class="form-text text-muted">Enter the questionnaire's purppose</small>
 
                             @error('purpose')

@@ -21,7 +21,11 @@ class QuestionnaireController extends Controller
             'purpose' => 'required',
         ]);
 
-        $questionnaire = Questionnaire::create();
+
+        $data['user_id'] = auth()->user()->id;
+        $questionnaire = Questionnaire::create($data);
+
+        return redirect('/questionnaires/' . $questionnaire->id);
     }
 
 
